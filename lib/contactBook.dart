@@ -3,7 +3,7 @@ import 'package:vanillacontacts_course/contactClass.dart';
 
 class ContactBook extends ValueNotifier<List<Contact>> {
   //Singleton Design
-  ContactBook._sharedInstance() : super([]); //
+  ContactBook._sharedInstance() : super([]);
   static final ContactBook _shared = ContactBook._sharedInstance();
   factory ContactBook() => _shared;
 
