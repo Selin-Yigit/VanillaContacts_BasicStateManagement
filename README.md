@@ -1,6 +1,6 @@
 # vanillacontacts_course
 
-A new Flutter project.
+A new Flutter project that includes basic state management.
 
 ## Getting Started
 
