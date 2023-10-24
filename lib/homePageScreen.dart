@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vanillacontacts_course/contactBook.dart';
+import 'package:vanillacontacts_course/newContactView.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -23,7 +24,9 @@ class HomePage extends StatelessWidget {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: ()async {
+          await Navigator.of(context).pushNamed("/new-contact");
+        },
         backgroundColor: Colors.blueGrey.shade600,
         child: const Icon(Icons.add),
       ),
