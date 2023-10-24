@@ -1,8 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:vanillacontacts_course/contactClass.dart';
 
-class ContactBook {
+class ContactBook extends ValueNotifier<List<Contact>> {
   //Singleton Design
-  ContactBook._sharedInstance();
+  ContactBook._sharedInstance() : super([]);//
   static final ContactBook _shared = ContactBook._sharedInstance();
   factory ContactBook() => _shared;
 
