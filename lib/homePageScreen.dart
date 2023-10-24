@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:vanillacontacts_course/contactBook.dart';
-import 'package:vanillacontacts_course/newContactView.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
